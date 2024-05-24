@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataAccess
-build_property.ProjectDir = D:\FU_Hub\FA23\PRN231\Lab\Lab01_ASP.NETCoreWebAPI\DataAccess\
+build_property.ProjectDir = D:\Services\prn231_lab01_webappapi\DataAccess\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

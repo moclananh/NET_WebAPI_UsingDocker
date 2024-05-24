@@ -9,6 +9,7 @@ using BusinessObjects;
 using BusinessObjects.Model;
 using Repositories.Interfaces;
 using Repositories.Respositories;
+using Repositories.UnitOfWork;
 
 namespace APIs.Controllers
 {
@@ -16,20 +17,25 @@ namespace APIs.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private IProductRepository repository = new ProductRepository();
+        private IUnitOfWork _unitOfWork;
+        public ProductsController(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+
 
         // GET: api/Products
         [HttpGet]
         public ActionResult<IEnumerable<Product>> GetProducts()
         {
-            return  repository.GetProducts();
+            return _unitOfWork.ProductRepository.GetProducts();
         }
 
         // GET: api/Products/5
         [HttpGet("{id}")]
         public ActionResult<Product> GetProduct(int id)
         {
-            var product = repository.GetProductById(id);
+            var product = _unitOfWork.ProductRepository.GetProductById(id);
 
             if (product == null)
             {
@@ -50,7 +56,7 @@ namespace APIs.Controllers
             }
             try
             {
-                repository.UpdateProduct(product);
+                _unitOfWork.ProductRepository.UpdateProduct(product);
             }
             catch (Exception e)
             {
@@ -65,7 +71,7 @@ namespace APIs.Controllers
         [HttpPost]
         public  ActionResult<Product> PostProduct(Product product)
         {
-            repository.SaveProduct(product);
+            _unitOfWork.ProductRepository.SaveProduct(product);
 
             return CreatedAtAction("GetProduct", new { id = product.ProductId }, product);
         }
@@ -74,13 +80,13 @@ namespace APIs.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteProduct(int id)
         {
-            var product = repository.GetProductById(id);
+            var product = _unitOfWork.ProductRepository.GetProductById(id);
             if (product == null)
             {
                 return NotFound();
             }
 
-           repository.DeleteProduct(product);
+            _unitOfWork.ProductRepository.DeleteProduct(product);
 
             return NoContent();
         }

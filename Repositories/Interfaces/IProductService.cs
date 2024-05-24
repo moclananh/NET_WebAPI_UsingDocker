@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.Interfaces
 {
-    public interface IProductRepository
+    public interface IProductService
     {
         void SaveProduct(Product product);
         Product GetProductById(int id);

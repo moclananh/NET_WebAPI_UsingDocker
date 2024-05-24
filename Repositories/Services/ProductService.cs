@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.Respositories
 {
-    public class ProductRepository : IProductRepository
+    public class ProductService : IProductService
     {
         public void DeleteProduct(Product product) 
             => ProductDAO.DeleteProduct(product);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.Interfaces
 {
-    public interface ICategoryRepository
+    public interface ICategoryService
     {
         List<Category> GetCategories();
     }

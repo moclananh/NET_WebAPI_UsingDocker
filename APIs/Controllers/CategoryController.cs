@@ -4,6 +4,7 @@ using Repositories.Interfaces;
 using Repositories.Respositories;
 using System.Collections.Generic;
 using System;
+using Repositories.UnitOfWork;
 
 namespace APIs.Controllers
 {
@@ -11,13 +12,18 @@ namespace APIs.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private ICategoryRepository repository = new CategoryRepository();
+       // private ICategoryService _repository;
+       private IUnitOfWork _unitOfWork;
+        public CategoryController(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
 
         // GET: api/Products
         [HttpGet]
         public ActionResult<IEnumerable<Category>> GetCategory()
         {
-            return repository.GetCategories();
+            return _unitOfWork.CategoryRepository.GetCategories();
         }
 
         

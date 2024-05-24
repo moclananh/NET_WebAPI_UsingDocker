@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xECQz+DyxaIHNDHE9XifGBzSlxAGBx36FhG+bRglITOVislRjOhPd9lPd+GIgQHrwd9bdvvrw+1r4hdJJGXGKA==",
+  "dgSpecHash": "sCO1rqX/DFwWmGdTinHbIRZACcPnK38cisJRv6G/1AtNQPTeMlTvjO9Y1LgSFJ9LbPJ8Wboo/9eiX4tyyYRRSw==",
   "success": true,
-  "projectFilePath": "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\APIs\\APIs.csproj",
+  "projectFilePath": "D:\\Services\\prn231_lab01_webappapi\\APIs\\APIs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kristino\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Kristino\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

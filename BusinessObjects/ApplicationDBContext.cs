@@ -19,7 +19,8 @@ namespace BusinessObjects
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
             IConfigurationRoot configuration = builder.Build();
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+            //optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+            optionsBuilder.UseSqlServer("server =192.168.1.6,1433; database = PRN231_Lab01;uid=sa;pwd=123456;TrustServerCertificate=True");
         }
 
         //dbset

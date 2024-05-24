@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj": {}
+    "D:\\Services\\prn231_lab01_webappapi\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {
+    "D:\\Services\\prn231_lab01_webappapi\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "D:\\Services\\prn231_lab01_webappapi\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj",
+        "projectPath": "D:\\Services\\prn231_lab01_webappapi\\BusinessObjects\\BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-        "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\obj\\",
+        "outputPath": "D:\\Services\\prn231_lab01_webappapi\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -84,18 +84,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj": {
+    "D:\\Services\\prn231_lab01_webappapi\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\Services\\prn231_lab01_webappapi\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj",
+        "projectPath": "D:\\Services\\prn231_lab01_webappapi\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-        "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\obj\\",
+        "outputPath": "D:\\Services\\prn231_lab01_webappapi\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -117,8 +117,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {
-                "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Lab\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj"
+              "D:\\Services\\prn231_lab01_webappapi\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "D:\\Services\\prn231_lab01_webappapi\\BusinessObjects\\BusinessObjects.csproj"
               }
             }
           }
@@ -148,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
